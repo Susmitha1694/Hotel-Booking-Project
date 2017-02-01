@@ -1,0 +1,51 @@
+create database hotelbooking_db;
+
+use hotelbooking_db;
+
+create table roomreservation(
+     id int auto_increment primary key,
+     city varchar(50),
+     hotelname varchar(50),
+     hotelnoofrooms int,
+     checkindate date,
+     checkoutdate date,
+     noofroomsbooked int,
+     totalamount decimal(10,3));
+
+create table hoteldetails(
+     id int auto_increment primary key,
+     hotelname varchar(50),
+     hotelcity varchar(50),
+     hotelnoofrooms int,
+     hotelstarrating int,
+     tariffperroom int);
+
+insert into hoteldetails(id,hotelname,hotelcity,hotelnoofrooms,hotelstarrating,tariffperroom)
+ values(1,"taj vivanta","banglore",100,9,2000.00);
+
+insert into hoteldetails(id,hotelname,hotelcity,hotelnoofrooms,hotelstarrating,tariffperroom)
+ values(2,"acme hotel","banglore",90,9,1500.00);
+
+insert into hoteldetails(id,hotelname,hotelcity,hotelnoofrooms,hotelstarrating,tariffperroom)
+ values(3,"samara hotel","banglore",100,8,1700.00);
+
+insert into hoteldetails(id,hotelname,hotelcity,hotelnoofrooms,hotelstarrating,tariffperroom)
+ values(4,"krishna hotel","banglore",150,7,1200.00);
+
+insert into hoteldetails(id,hotelname,hotelcity,hotelnoofrooms,hotelstarrating,tariffperroom)
+ values(5,"vijaya hotel","banglore",80,8,1000.00);
+
+insert into hoteldetails(id,hotelname,hotelcity,hotelnoofrooms,hotelstarrating,tariffperroom)
+ values(5,"krishna saphire","pune",200,9,1000.00);
+
+insert into hoteldetails(id,hotelname,hotelcity,hotelnoofrooms,hotelstarrating,tariffperroom)
+ values(5,"maruthi saphire","pune",90,9,900.00);
+
+insert into hoteldetails(id,hotelname,hotelcity,hotelnoofrooms,hotelstarrating,tariffperroom)
+ values(5,"roerich hotel","pune",90,9,3000.00);
+
+insert into hoteldetails(id,hotelname,hotelcity,hotelnoofrooms,hotelstarrating,tariffperroom)
+ values(5,"mango hotel","pune",90,9,3500.00);
+
+insert into hoteldetails(id,hotelname,hotelcity,hotelnoofrooms,hotelstarrating,tariffperroom)
+ values(5,"orange county","pune",90,9,2000.00);
